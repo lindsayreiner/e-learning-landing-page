@@ -1,0 +1,142 @@
+/* --------------------*/
+/* Colors              */
+/* --------------------*/
+
+:root {
+    --main: #F2F2F2;
+    --lightblue: #666CA3;
+    --darkblue: #13183F;
+    --gray: #83869A;
+    --hotpink: #F74780;
+    --lightpink: #FFA7C3;
+    --white: #FFFFFF;
+    --orange-pink: linear-gradient(#F02AA6, #FF6F48);
+    --blue-pink: linear-gradient(#4851FF, #F02AA6);
+}
+
+/* --------------------*/
+/* Fonts               */
+/* --------------------*/
+
+/* font-family: 'Plus Jakarta Sans', sans-serif;  */
+
+/* --------------------*/
+/* Reset               */
+/* --------------------*/
+
+/* https://piccalil.li/blog/a-modern-css-rest/ */
+
+/* Box Sizing */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Default font size - 1em = 16px - 2.1rem = 21px */
+
+html,
+#root,
+body {
+  height: 100%;
+  /* width: 100%; */
+}
+
+/* No text decoration for a links */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset margins */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+picture,
+figure {
+  margin: 0;
+}
+
+.app-wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.app-wrapper > main {
+  flex: 1 0 auto;
+}
+
+/* Unset all navbar presets */
+.navbar > .container {
+  all: unset;
+}
+
+.btn {
+  margin: 0;
+}
+
+/* Set up the body */
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--main);
+}
+
+main {
+  position: relative;
+}
+
+/*make images easier to work with */
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.form div {
+  margin-bottom: 0.85rem;
+}
+
+.form div:nth-last-child(2) {
+  margin-bottom: 1.5rem;
+}
+
+/* remove animations for people who've turned them off */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Sticky footer */
+
+body > footer {
+  position: sticky;
+  top: 100vh;
+}

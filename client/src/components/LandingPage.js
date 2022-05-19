@@ -20,6 +20,36 @@ export default function LandingPage() {
 
                 <img className="heroImg" src={heroImg} alt="woman-drinking-coffee" height="800" />
             </section>
+            <section className="coursesCont">
+                <div>Check out our most popular courses!</div>
+                <div className="courseCard">
+                    <span className="courseTitle">Animation</span>
+                    <p> Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
+                    <a href="url">Get Started</a>
+                </div>
+
+                <div className="courseCard">
+                    <span className="courseTitle">Design</span>
+                    <p className="courseDesc"> Create beautiful, usable interfaces to help shape the future of how the web looks.</p>
+                    <a href="url">Get Started</a>
+
+                </div>
+                <div className="courseCard">
+                    <span className="courseTitle">Photography</span>
+                    <p className="courseDesc"> Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</p>
+                    <a href="url">Get Started</a>
+                </div>
+                <div className="courseCard">
+                    <span className="courseTitle">Crypto</span>
+                    <p className="courseDesc">All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.</p>
+                    <a href="url">Get Started</a>
+                </div>
+                <div className="courseCard">
+                    <span className="courseTitle">Business</span>
+                    <p className="courseDesc"> A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
+                    <a href="url">Get Started</a>
+                </div>
+            </section>
         </>
     )
 }

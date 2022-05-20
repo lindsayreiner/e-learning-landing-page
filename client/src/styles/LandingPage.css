@@ -136,17 +136,24 @@ body > footer {
   margin-left: 10rem;
 
   }
+
+  .logo {
+    width: 86px;
+    height: 21px;
+    margin-left: 10rem;
+  }
+
   
 .getStartedBtn {
- 
   color: var(--white);
   padding: 1rem;
   font-family: inherit;
   font-size: 16px;
   margin-right: 15rem;
-  border-radius: 50%;
+  border-radius: 55%;
   border-top: 0;
   border-bottom: 0;
+  border: none;
   }
 
   .getStartedBtn.blue {
@@ -155,6 +162,16 @@ body > footer {
 
   .getStartedBtn.pink {
     background-image: linear-gradient(#4851FF, #F02AA6); 
+  }
+
+  .getStartedBtn.orange {
+    background-image: linear-gradient(#F02AA6, #FF6F48);
+    margin-top: 1rem;
+  }
+
+  .getStartedBtn:hover,
+  .course-get-started:hover {
+    opacity: 65%;
   }
 
 /* --------------------*/
@@ -212,14 +229,17 @@ top: -20rem;
 .course {
   border-radius: 8px;
   background-color: var(--white);
-
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .checkOut {
   background-image: linear-gradient(#F02AA6, #FF6F48);
   color: var(--white);
   font-weight: bold;  
-  font-size: 20px;
+  font-size: 25px;
+  line-height: 40px;
   padding:  3rem;
   border-radius: 8px;
 }
@@ -238,27 +258,14 @@ top: -20rem;
   font-weight: bold;
   color: var(--hotpink);
   line-height: 55px;
+  /* align-self: flex-start; */
 }
 
-.course.animation::before {
-  background-image: url(../assets/icon-animation.svg);
+.courseIcon {
+position: absolute;
+bottom: 260px;
 }
 
-.course.design::before {
-  background-image: url(../assets/icon-design.svg);
-}
-
-.course.photography::before {
-  background-image: url(../assets/icon-photography.svg);
-}
-
-.course.crypto::before {
-  background-image: url(../assets/icon-crypto.svg);
-}
-
-.business::before {
-  background-image: url(../assets/icon-business.svg);
-}
 
 /* --------------------*/
 /* Footer              */

@@ -138,7 +138,7 @@ body > footer {
   }
   
 .getStartedBtn {
-  background-color: var(--darkblue);
+ 
   color: var(--white);
   padding: 1rem;
   font-family: inherit;
@@ -147,6 +147,14 @@ body > footer {
   border-radius: 50%;
   border-top: 0;
   border-bottom: 0;
+  }
+
+  .getStartedBtn.blue {
+    background-color: var(--darkblue);
+  }
+
+  .getStartedBtn.pink {
+    background-image: linear-gradient(#4851FF, #F02AA6); 
   }
 
 /* --------------------*/
@@ -184,6 +192,83 @@ top: -20rem;
 }
 
 /* --------------------*/
-/* Course ection        */
+/* Course Section      */
 /* --------------------*/
 
+.coursesGrid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  width: min(97%, 65rem);
+  line-height: 30px;
+  margin: 0 auto;
+}
+
+.grid-padding {
+  padding: 2rem;
+  padding-left: 2rem;
+}
+
+.course {
+  border-radius: 8px;
+  background-color: var(--white);
+
+}
+
+.checkOut {
+  background-image: linear-gradient(#F02AA6, #FF6F48);
+  color: var(--white);
+  font-weight: bold;  
+  font-size: 20px;
+  padding:  3rem;
+  border-radius: 8px;
+}
+
+.courseTitle {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 55px;
+}
+
+.courseDesc {
+  color: var(--gray);
+  font-weight: 400;
+}
+.course-get-started {
+  font-weight: bold;
+  color: var(--hotpink);
+  line-height: 55px;
+}
+
+.course.animation::before {
+  background-image: url(../assets/icon-animation.svg);
+}
+
+.course.design::before {
+  background-image: url(../assets/icon-design.svg);
+}
+
+.course.photography::before {
+  background-image: url(../assets/icon-photography.svg);
+}
+
+.course.crypto::before {
+  background-image: url(../assets/icon-crypto.svg);
+}
+
+.business::before {
+  background-image: url(../assets/icon-business.svg);
+}
+
+/* --------------------*/
+/* Footer              */
+/* --------------------*/
+
+.footer {
+  background-color: var(--darkblue);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-top: 6rem;
+}
